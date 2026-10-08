@@ -1,0 +1,77 @@
+name: Fork proposal
+description: Propose a project for ForkedEvolution to fork.
+title: "[proposal] "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read the [Decrees](https://github.com/ForkedEvolution/natural-selection/blob/main/DECREES.md) first.
+        Describe what the fork adds, not what upstream got wrong.
+
+  - type: input
+    id: upstream
+    attributes:
+      label: Upstream repository
+      description: >-
+        Repository root URL only. Never link upstream issues, PRs, or
+        discussions: GitHub notifies them (Decree I).
+      placeholder: https://github.com/owner/project
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: Upstream license (SPDX identifier)
+      description: Must be OSI-approved (Decree III).
+      placeholder: GPL-2.0-only
+    validations:
+      required: true
+
+  - type: input
+    id: policy
+    attributes:
+      label: Upstream AI / Rust policy
+      description: >-
+        Link to the policy file or web page. If it only exists in an issue or
+        discussion, quote it instead of linking (Decree I).
+    validations:
+      required: true
+
+  - type: textarea
+    id: adds
+    attributes:
+      label: What the fork adds
+      description: >-
+        What would Rust or AI-assisted development enable here that upstream
+        can't accept? Concrete, user-facing value; "it has Rust now" alone is
+        rejected (Decree VII).
+    validations:
+      required: true
+
+  - type: dropdown
+    id: steward
+    attributes:
+      label: Will you steward this fork?
+      options:
+        - "Yes"
+        - "No, looking for a steward"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: decrees
+    attributes:
+      label: Decrees
+      options:
+        - label: The upstream license is OSI-approved (Decree III).
+          required: true
+        - label: >-
+            I have not contacted, @-mentioned, or linked upstream maintainers
+            or their issues, PRs, or discussions (Decree I).
+          required: true
+        - label: >-
+            This proposal describes the fork, not upstream's decision or the
+            people behind it (Decree II).
+          required: true

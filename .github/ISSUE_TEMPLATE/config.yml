@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Decrees
+    url: https://github.com/ForkedEvolution/natural-selection/blob/main/DECREES.md
+    about: The rules for every proposal, fork, and member.
