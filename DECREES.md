@@ -31,7 +31,11 @@ yes somewhere else and never make it their problem.
 ## III. The license is the law
 
 - Fork only projects under an OSI-approved license. Source-available, BSL,
-  SSPL, non-commercial, or custom "no AI" licenses: don't touch.
+  SSPL, or non-commercial licenses: don't touch.
+- A no-AI policy (in CONTRIBUTING, AGENTS.md, or a maintainer statement) is
+  not a license term. It governs upstream's repo, not forks, and it's exactly
+  what we fork. OSI licenses can't restrict how code is used, so none of them
+  forbids AI.
 - Preserve every copyright notice, `LICENSE`, `NOTICE`, and `AUTHORS` file.
 - New code, Rust or otherwise, ships under upstream's license. It runs in
   the same program, so it follows the same terms.
